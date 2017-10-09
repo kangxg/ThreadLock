@@ -16,6 +16,20 @@
 		402A7BE01F7D3768006E674B /* ThreadLockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A7BDF1F7D3768006E674B /* ThreadLockTests.m */; };
 		402A7BEB1F7D3768006E674B /* ThreadLockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A7BEA1F7D3768006E674B /* ThreadLockUITests.m */; };
 		402A7BFA1F7D3793006E674B /* HPCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A7BF91F7D3793006E674B /* HPCache.m */; };
+		402A7BFD1F7DF55D006E674B /* Counting.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A7BFC1F7DF55D006E674B /* Counting.m */; };
+		402A7C001F7DF5DC006E674B /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A7BFF1F7DF5DC006E674B /* Counter.m */; };
+		402A7C031F7E1A07006E674B /* Puzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A7C021F7E1A07006E674B /* Puzzle.m */; };
+		402A7C061F7E84D9006E674B /* producter.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A7C051F7E84D9006E674B /* producter.m */; };
+		402A7C091F7E84F9006E674B /* consumer.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A7C081F7E84F9006E674B /* consumer.m */; };
+		402A7C0C1F7E850C006E674B /* Coordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A7C0B1F7E850C006E674B /* Coordinator.m */; };
+		40D40B571F7F7B090046172B /* HPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D40B561F7F7B090046172B /* HPUser.m */; };
+		40D40B5A1F7F7B1E0046172B /* HPAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D40B591F7F7B1E0046172B /* HPAlbum.m */; };
+		40D40B5D1F7F7B2C0046172B /* HPPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D40B5C1F7F7B2C0046172B /* HPPhoto.m */; };
+		40D40B601F7F7E030046172B /* HPUserBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D40B5F1F7F7E030046172B /* HPUserBuilder.m */; };
+		40D40B631F7F84680046172B /* HPUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D40B621F7F84680046172B /* HPUserService.m */; };
+		40D40B661F7F85900046172B /* HPSyncService.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D40B651F7F85900046172B /* HPSyncService.m */; };
+		40D40B691F7F899D0046172B /* HPAlbumService.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D40B681F7F899D0046172B /* HPAlbumService.m */; };
+		BCBA3744E08FAEEA9F63F091 /* Pods_ThreadLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDDDCE7CF5D87C15E41B85C /* Pods_ThreadLock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40258F7B1F8A4B020010EE1C /* testProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testProtocol.h; sourceTree = "<group>"; };
 		402A7BC31F7D3768006E674B /* ThreadLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		402A7BC61F7D3768006E674B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		402A7BC71F7D3768006E674B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +69,36 @@
 		402A7BEC1F7D3768006E674B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		402A7BF81F7D3793006E674B /* HPCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPCache.h; sourceTree = "<group>"; };
 		402A7BF91F7D3793006E674B /* HPCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPCache.m; sourceTree = "<group>"; };
+		402A7BFB1F7DF55D006E674B /* Counting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Counting.h; sourceTree = "<group>"; };
+		402A7BFC1F7DF55D006E674B /* Counting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Counting.m; sourceTree = "<group>"; };
+		402A7BFE1F7DF5DC006E674B /* Counter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Counter.h; sourceTree = "<group>"; };
+		402A7BFF1F7DF5DC006E674B /* Counter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Counter.m; sourceTree = "<group>"; };
+		402A7C011F7E1A07006E674B /* Puzzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Puzzle.h; sourceTree = "<group>"; };
+		402A7C021F7E1A07006E674B /* Puzzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Puzzle.m; sourceTree = "<group>"; };
+		402A7C041F7E84D9006E674B /* producter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = producter.h; sourceTree = "<group>"; };
+		402A7C051F7E84D9006E674B /* producter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = producter.m; sourceTree = "<group>"; };
+		402A7C071F7E84F9006E674B /* consumer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = consumer.h; sourceTree = "<group>"; };
+		402A7C081F7E84F9006E674B /* consumer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = consumer.m; sourceTree = "<group>"; };
+		402A7C0A1F7E850C006E674B /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
+		402A7C0B1F7E850C006E674B /* Coordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coordinator.m; sourceTree = "<group>"; };
+		403E27DF1F80E2FF00CBFC0C /* threadHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threadHeader.h; sourceTree = "<group>"; };
+		40D40B551F7F7B090046172B /* HPUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPUser.h; sourceTree = "<group>"; };
+		40D40B561F7F7B090046172B /* HPUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPUser.m; sourceTree = "<group>"; };
+		40D40B581F7F7B1E0046172B /* HPAlbum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPAlbum.h; sourceTree = "<group>"; };
+		40D40B591F7F7B1E0046172B /* HPAlbum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPAlbum.m; sourceTree = "<group>"; };
+		40D40B5B1F7F7B2C0046172B /* HPPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPPhoto.h; sourceTree = "<group>"; };
+		40D40B5C1F7F7B2C0046172B /* HPPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPPhoto.m; sourceTree = "<group>"; };
+		40D40B5E1F7F7E030046172B /* HPUserBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPUserBuilder.h; sourceTree = "<group>"; };
+		40D40B5F1F7F7E030046172B /* HPUserBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPUserBuilder.m; sourceTree = "<group>"; };
+		40D40B611F7F84680046172B /* HPUserService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPUserService.h; sourceTree = "<group>"; };
+		40D40B621F7F84680046172B /* HPUserService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPUserService.m; sourceTree = "<group>"; };
+		40D40B641F7F85900046172B /* HPSyncService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPSyncService.h; sourceTree = "<group>"; };
+		40D40B651F7F85900046172B /* HPSyncService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPSyncService.m; sourceTree = "<group>"; };
+		40D40B671F7F899D0046172B /* HPAlbumService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPAlbumService.h; sourceTree = "<group>"; };
+		40D40B681F7F899D0046172B /* HPAlbumService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPAlbumService.m; sourceTree = "<group>"; };
+		E9DDA8DE76C1416CD006F6C6 /* Pods-ThreadLock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreadLock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreadLock/Pods-ThreadLock.debug.xcconfig"; sourceTree = "<group>"; };
+		EBDDDCE7CF5D87C15E41B85C /* Pods_ThreadLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreadLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F292CC18C7F8D41DD5329440 /* Pods-ThreadLock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreadLock.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreadLock/Pods-ThreadLock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBA3744E08FAEEA9F63F091 /* Pods_ThreadLock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +127,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10DAEED696E99419E0861296 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9DDA8DE76C1416CD006F6C6 /* Pods-ThreadLock.debug.xcconfig */,
+				F292CC18C7F8D41DD5329440 /* Pods-ThreadLock.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		402A7BBA1F7D3768006E674B = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +143,8 @@
 				402A7BDE1F7D3768006E674B /* ThreadLockTests */,
 				402A7BE91F7D3768006E674B /* ThreadLockUITests */,
 				402A7BC41F7D3768006E674B /* Products */,
+				10DAEED696E99419E0861296 /* Pods */,
+				4B4F8EBBEFA8E328B14545F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +167,34 @@
 				402A7BF91F7D3793006E674B /* HPCache.m */,
 				402A7BC91F7D3768006E674B /* ViewController.h */,
 				402A7BCA1F7D3768006E674B /* ViewController.m */,
+				402A7C041F7E84D9006E674B /* producter.h */,
+				402A7C051F7E84D9006E674B /* producter.m */,
+				402A7C071F7E84F9006E674B /* consumer.h */,
+				402A7C081F7E84F9006E674B /* consumer.m */,
+				402A7C0A1F7E850C006E674B /* Coordinator.h */,
+				402A7C0B1F7E850C006E674B /* Coordinator.m */,
+				402A7BFB1F7DF55D006E674B /* Counting.h */,
+				402A7BFC1F7DF55D006E674B /* Counting.m */,
+				402A7BFE1F7DF5DC006E674B /* Counter.h */,
+				402A7BFF1F7DF5DC006E674B /* Counter.m */,
+				402A7C011F7E1A07006E674B /* Puzzle.h */,
+				402A7C021F7E1A07006E674B /* Puzzle.m */,
+				40D40B551F7F7B090046172B /* HPUser.h */,
+				40D40B561F7F7B090046172B /* HPUser.m */,
+				40D40B581F7F7B1E0046172B /* HPAlbum.h */,
+				40D40B591F7F7B1E0046172B /* HPAlbum.m */,
+				40D40B5B1F7F7B2C0046172B /* HPPhoto.h */,
+				40D40B5C1F7F7B2C0046172B /* HPPhoto.m */,
+				40D40B5E1F7F7E030046172B /* HPUserBuilder.h */,
+				40D40B5F1F7F7E030046172B /* HPUserBuilder.m */,
+				40D40B611F7F84680046172B /* HPUserService.h */,
+				40D40B621F7F84680046172B /* HPUserService.m */,
+				40D40B641F7F85900046172B /* HPSyncService.h */,
+				40D40B651F7F85900046172B /* HPSyncService.m */,
+				40D40B671F7F899D0046172B /* HPAlbumService.h */,
+				40D40B681F7F899D0046172B /* HPAlbumService.m */,
+				40258F7B1F8A4B020010EE1C /* testProtocol.h */,
+				403E27DF1F80E2FF00CBFC0C /* threadHeader.h */,
 				402A7BCC1F7D3768006E674B /* Main.storyboard */,
 				402A7BCF1F7D3768006E674B /* Assets.xcassets */,
 				402A7BD11F7D3768006E674B /* LaunchScreen.storyboard */,
@@ -137,6 +222,14 @@
 			path = ThreadLockUITests;
 			sourceTree = "<group>";
 		};
+		4B4F8EBBEFA8E328B14545F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBDDDCE7CF5D87C15E41B85C /* Pods_ThreadLock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 402A7BEF1F7D3768006E674B /* Build configuration list for PBXNativeTarget "ThreadLock" */;
 			buildPhases = (
+				9E71C3A7BD378018E113A448 /* [CP] Check Pods Manifest.lock */,
 				402A7BBF1F7D3768006E674B /* Sources */,
 				402A7BC01F7D3768006E674B /* Frameworks */,
 				402A7BC11F7D3768006E674B /* Resources */,
+				8FA50451C21CE3D4FBE325D1 /* [CP] Embed Pods Frameworks */,
+				6F53A944FB5E9508832B223E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,14 +361,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6F53A944FB5E9508832B223E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreadLock/Pods-ThreadLock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FA50451C21CE3D4FBE325D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreadLock/Pods-ThreadLock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E71C3A7BD378018E113A448 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		402A7BBF1F7D3768006E674B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40D40B661F7F85900046172B /* HPSyncService.m in Sources */,
+				402A7C091F7E84F9006E674B /* consumer.m in Sources */,
 				402A7BFA1F7D3793006E674B /* HPCache.m in Sources */,
+				402A7C031F7E1A07006E674B /* Puzzle.m in Sources */,
+				40D40B571F7F7B090046172B /* HPUser.m in Sources */,
+				40D40B601F7F7E030046172B /* HPUserBuilder.m in Sources */,
 				402A7BCB1F7D3768006E674B /* ViewController.m in Sources */,
+				40D40B631F7F84680046172B /* HPUserService.m in Sources */,
+				402A7BFD1F7DF55D006E674B /* Counting.m in Sources */,
 				402A7BD61F7D3768006E674B /* main.m in Sources */,
+				40D40B5D1F7F7B2C0046172B /* HPPhoto.m in Sources */,
+				402A7C001F7DF5DC006E674B /* Counter.m in Sources */,
+				402A7C061F7E84D9006E674B /* producter.m in Sources */,
+				40D40B5A1F7F7B1E0046172B /* HPAlbum.m in Sources */,
+				40D40B691F7F899D0046172B /* HPAlbumService.m in Sources */,
+				402A7C0C1F7E850C006E674B /* Coordinator.m in Sources */,
 				402A7BC81F7D3768006E674B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,10 +591,12 @@
 		};
 		402A7BF01F7D3768006E674B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DDA8DE76C1416CD006F6C6 /* Pods-ThreadLock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ThreadLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zy.ThreadLock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,10 +606,12 @@
 		};
 		402A7BF11F7D3768006E674B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F292CC18C7F8D41DD5329440 /* Pods-ThreadLock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ThreadLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zy.ThreadLock;
 				PRODUCT_NAME = "$(TARGET_NAME)";

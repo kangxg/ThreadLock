@@ -1,0 +1,6 @@
+framework module Pods_ThreadLock {
+  umbrella header "Pods-ThreadLock-umbrella.h"
+
+  export *
+  module * { export * }
+}

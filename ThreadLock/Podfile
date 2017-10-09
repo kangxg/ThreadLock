@@ -1,0 +1,10 @@
+
+platform :ios, ‘11.0‘
+use_frameworks! 
+
+target ‘ThreadLock’ do
+
+pod 'ReactiveObjC', '~> 3.0.0’
+
+pod “PromiseKit”, “~> 4.0”
+end 
