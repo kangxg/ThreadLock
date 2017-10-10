@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4007678F1F8CA9A5008A2C4D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4007678E1F8CA9A5008A2C4D /* Person.m */; };
 		402A7BC81F7D3768006E674B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A7BC71F7D3768006E674B /* AppDelegate.m */; };
 		402A7BCB1F7D3768006E674B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A7BCA1F7D3768006E674B /* ViewController.m */; };
 		402A7BCE1F7D3768006E674B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402A7BCC1F7D3768006E674B /* Main.storyboard */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4007678D1F8CA9A5008A2C4D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		4007678E1F8CA9A5008A2C4D /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		40258F7B1F8A4B020010EE1C /* testProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testProtocol.h; sourceTree = "<group>"; };
 		402A7BC31F7D3768006E674B /* ThreadLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		402A7BC61F7D3768006E674B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +139,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4007678B1F8C714C008A2C4D /* testPromisei */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = testPromisei;
+			sourceTree = "<group>";
+		};
+		4007678C1F8C716F008A2C4D /* testFRP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = testFRP;
+			sourceTree = "<group>";
+		};
 		402A7BBA1F7D3768006E674B = {
 			isa = PBXGroup;
 			children = (
@@ -161,12 +178,16 @@
 		402A7BC51F7D3768006E674B /* ThreadLock */ = {
 			isa = PBXGroup;
 			children = (
+				4007678C1F8C716F008A2C4D /* testFRP */,
+				4007678B1F8C714C008A2C4D /* testPromisei */,
 				402A7BC61F7D3768006E674B /* AppDelegate.h */,
 				402A7BC71F7D3768006E674B /* AppDelegate.m */,
 				402A7BF81F7D3793006E674B /* HPCache.h */,
 				402A7BF91F7D3793006E674B /* HPCache.m */,
 				402A7BC91F7D3768006E674B /* ViewController.h */,
 				402A7BCA1F7D3768006E674B /* ViewController.m */,
+				4007678D1F8CA9A5008A2C4D /* Person.h */,
+				4007678E1F8CA9A5008A2C4D /* Person.m */,
 				402A7C041F7E84D9006E674B /* producter.h */,
 				402A7C051F7E84D9006E674B /* producter.m */,
 				402A7C071F7E84F9006E674B /* consumer.h */,
@@ -420,6 +441,7 @@
 				402A7C031F7E1A07006E674B /* Puzzle.m in Sources */,
 				40D40B571F7F7B090046172B /* HPUser.m in Sources */,
 				40D40B601F7F7E030046172B /* HPUserBuilder.m in Sources */,
+				4007678F1F8CA9A5008A2C4D /* Person.m in Sources */,
 				402A7BCB1F7D3768006E674B /* ViewController.m in Sources */,
 				40D40B631F7F84680046172B /* HPUserService.m in Sources */,
 				402A7BFD1F7DF55D006E674B /* Counting.m in Sources */,

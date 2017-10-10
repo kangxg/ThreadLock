@@ -70,17 +70,19 @@
 }
 -(RACSignal *)signalForUserWithId:(NSString *)uid
 {
+    @weakify(self)
     RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber>  subscriber) {
+        @strongify(self)
         HPUser *userFromCache = [self.userCache objectForKey:uid];
         if(userFromCache) {
             [subscriber sendNext:userFromCache];
             [subscriber sendCompleted];
             
-            
         }else{
             //假设HPSyncService也遵循FRP风格
             RACSignal * racs = [[HPSyncService sharedInstance] loadType:@"user" withId:uid];
             [racs subscribeNext:^(HPUser *userFromServer) {
+                
                 //也更新本地缓存和通知
                 [subscriber sendNext:userFromServer];
                 [subscriber sendCompleted];
@@ -100,12 +102,14 @@
 {
     // signalForUpdateUser 方法更新一个 HPUser 对象
     //这里创建了 RACSignal。
+    @weakify(self);
     RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber>  subscriber) {
         //        trongifer(strongSelf);
         RACSignal * racs = [[HPSyncService sharedInstance]updateType:@"user" withId:user.userId value:user];
         [racs subscribeNext:^(NSDictionary *data) {
             //使用HPUserBuilder，分析数据并构建
             HPUser *updatedUser = [_userBuilder build];
+            @strongify(self)
             id oldUser = [self.userCache objectForKey:updatedUser.userId];
             [self.userCache setObject:updatedUser forKey:updatedUser.userId];
             [subscriber sendNext:updatedUser];
