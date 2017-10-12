@@ -11,15 +11,20 @@ PODS:
   - PromiseKit/UIKit (4.4.0):
     - PromiseKit/CorePromise
   - ReactiveObjC (3.0.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
 
 DEPENDENCIES:
   - PromiseKit (~> 4.0)
   - ReactiveObjC (~> 3.0.0)
+  - SDWebImage (~> 3.8.1)
 
 SPEC CHECKSUMS:
   PromiseKit: ecf5fe92275d57ee77c9ede858af47a162e9b97e
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: f7f89e62d1df38490f11fb3613c3c3917cff445f
+PODFILE CHECKSUM: e29fc7988572dfdd777dc442fe31c0ba5a843f95
 
 COCOAPODS: 1.2.1

@@ -14,7 +14,13 @@
 #import "HPAlbum.h"
 #import "HPUserService.h"
 #import <ReactiveObjC/ReactiveObjC.h>
+#import <PromiseKit/PromiseKit.h>
+#import <PromiseKit/PMKUIKit.h>
 #import "Person.h"
+#import "testPromiseViewController.h"
+#import "testPromiseView.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/SDWebImageManager.h>
 @interface ViewController ()
 @property (nonatomic, strong)  UILabel        *  nameLabel;
 @property (nonatomic, strong)  UITextField    *  nameText;
@@ -39,6 +45,8 @@
 //    [self delegateDemo];
 //    [self notificationDemo];
     //[self nameTextFieldChange];
+    
+    [self begainPromise];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -763,26 +771,7 @@
     [subSubject1 sendNext:@1];
     [subSubject2 sendNext:@2];
 }
--(UIButton *)hightButton
-{
-    if (_loginButton == nil)
-    {
-        _hightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        _hightButton.frame = CGRectMake(120, 160, 160, 30);
-        [_hightButton setTitle:@"高级用法" forState:UIControlStateNormal];
-        _hightButton.backgroundColor = [UIColor greenColor];
-        [_hightButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        
-        @weakify(self);
-        [[_hightButton rac_signalForControlEvents:UIControlEventTouchUpInside]
-         subscribeNext:^(id x) {
-             @strongify(self);
-             [self commandSignal];
-         } ];
-        
-    }
-    return _hightButton;
-}
+
 -(void)replaySubject
 {
     RACReplaySubject *replaySubject = [RACReplaySubject replaySubjectWithCapacity:5];
@@ -859,12 +848,7 @@
     }];
 
 }
-//点击屏幕 触发事件 nameLabel 文本更改
-//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-//{
-//    _nameText.backgroundColor = [UIColor yellowColor];
-//
-//}
+
 
 -(void)ChannelSignal
 {
@@ -899,5 +883,96 @@
     //输出1，2
     NSLog(@"%@,%@",num1,num2);
     
+}
+-(UIButton *)hightButton
+{
+    if (_loginButton == nil)
+    {
+        _hightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _hightButton.frame = CGRectMake(120, 160, 160, 30);
+        [_hightButton setTitle:@"高级用法" forState:UIControlStateNormal];
+        _hightButton.backgroundColor = [UIColor greenColor];
+        [_hightButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        
+        @weakify(self);
+        [[_hightButton rac_signalForControlEvents:UIControlEventTouchUpInside]
+         subscribeNext:^(id x) {
+             @strongify(self);
+             [self commandSignal];
+         } ];
+        
+    }
+    return _hightButton;
+}
+
+//点击屏幕 触发事件 nameLabel 文本更改
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+//    [self begainPromise];
+
+}
+#pragma mark
+#pragma mark  -------- 使用 PromiseKit ---------
+-(void)testPMKUIKit
+{
+    [UIView promiseWithDuration:0 animations:nil].then(^(id value){
+        testPromiseView * view = [[testPromiseView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height-300, self.view.frame.size.width, 300)];
+        [self.view addSubview:view];
+    });
+    
+    [self promiseViewController:[testPromiseViewController new] animated:YES completion:nil].then(^(id value){
+        //输出 some fulfilled value
+        NSLog(@"%@",value);
+    });
+}
+-(void)old{
+   NSString * urlStr =@"https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=51996ee461d9f2d3341c2cbdc885e176/9c16fdfaaf51f3de9ee2e86197eef01f3a297966.jpg";
+    [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:urlStr] options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+        //
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            if (image) {
+                UIImageView * imageView =[[UIImageView alloc]initWithFrame:self.view.bounds];
+                imageView.image = image;
+                [self.view addSubview:imageView];
+            }
+        });
+    }];
+    
+    
+}
+-(void)begainPromise
+{
+   NSString * urlStr =@"https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=51996ee461d9f2d3341c2cbdc885e176/9c16fdfaaf51f3de9ee2e86197eef01f3a297966.jpg";
+ 
+    [self loadImage:urlStr].then(^(id value){
+          UIImage * image = value;
+           return image;
+    }).thenOn( dispatch_get_main_queue(),^(UIImage * image){
+        if (image) {
+
+            UIImageView * imageView =[[UIImageView alloc]initWithFrame:self.view.bounds];
+            imageView.image = image;
+            [self.view addSubview:imageView];
+        }
+    }).catch(^(NSError *error){
+        NSLog(@"error :%@",error);
+    }) ;
+}
+
+-(AnyPromise *)loadImage:(NSString *)imageUrl
+{
+    return [AnyPromise promiseWithResolverBlock:^(PMKResolver resolve) {
+        [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:imageUrl] options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+            if (error)
+            {
+                 resolve(error);
+            }
+            else
+            {
+                 resolve(image);
+            }
+        }];
+    }];
 }
 @end

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4007678F1F8CA9A5008A2C4D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4007678E1F8CA9A5008A2C4D /* Person.m */; };
+		400767921F8F19F9008A2C4D /* testPromiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 400767911F8F19F9008A2C4D /* testPromiseView.m */; };
+		400767951F8F1A19008A2C4D /* testPromiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 400767941F8F1A19008A2C4D /* testPromiseViewController.m */; };
 		402A7BC81F7D3768006E674B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A7BC71F7D3768006E674B /* AppDelegate.m */; };
 		402A7BCB1F7D3768006E674B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A7BCA1F7D3768006E674B /* ViewController.m */; };
 		402A7BCE1F7D3768006E674B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402A7BCC1F7D3768006E674B /* Main.storyboard */; };
@@ -53,6 +55,10 @@
 /* Begin PBXFileReference section */
 		4007678D1F8CA9A5008A2C4D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		4007678E1F8CA9A5008A2C4D /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		400767901F8F19F9008A2C4D /* testPromiseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testPromiseView.h; sourceTree = "<group>"; };
+		400767911F8F19F9008A2C4D /* testPromiseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testPromiseView.m; sourceTree = "<group>"; };
+		400767931F8F1A19008A2C4D /* testPromiseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testPromiseViewController.h; sourceTree = "<group>"; };
+		400767941F8F1A19008A2C4D /* testPromiseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testPromiseViewController.m; sourceTree = "<group>"; };
 		40258F7B1F8A4B020010EE1C /* testProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testProtocol.h; sourceTree = "<group>"; };
 		402A7BC31F7D3768006E674B /* ThreadLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		402A7BC61F7D3768006E674B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -214,6 +220,10 @@
 				40D40B651F7F85900046172B /* HPSyncService.m */,
 				40D40B671F7F899D0046172B /* HPAlbumService.h */,
 				40D40B681F7F899D0046172B /* HPAlbumService.m */,
+				400767901F8F19F9008A2C4D /* testPromiseView.h */,
+				400767911F8F19F9008A2C4D /* testPromiseView.m */,
+				400767931F8F1A19008A2C4D /* testPromiseViewController.h */,
+				400767941F8F1A19008A2C4D /* testPromiseViewController.m */,
 				40258F7B1F8A4B020010EE1C /* testProtocol.h */,
 				403E27DF1F80E2FF00CBFC0C /* threadHeader.h */,
 				402A7BCC1F7D3768006E674B /* Main.storyboard */,
@@ -447,12 +457,14 @@
 				402A7BFD1F7DF55D006E674B /* Counting.m in Sources */,
 				402A7BD61F7D3768006E674B /* main.m in Sources */,
 				40D40B5D1F7F7B2C0046172B /* HPPhoto.m in Sources */,
+				400767951F8F1A19008A2C4D /* testPromiseViewController.m in Sources */,
 				402A7C001F7DF5DC006E674B /* Counter.m in Sources */,
 				402A7C061F7E84D9006E674B /* producter.m in Sources */,
 				40D40B5A1F7F7B1E0046172B /* HPAlbum.m in Sources */,
 				40D40B691F7F899D0046172B /* HPAlbumService.m in Sources */,
 				402A7C0C1F7E850C006E674B /* Coordinator.m in Sources */,
 				402A7BC81F7D3768006E674B /* AppDelegate.m in Sources */,
+				400767921F8F19F9008A2C4D /* testPromiseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

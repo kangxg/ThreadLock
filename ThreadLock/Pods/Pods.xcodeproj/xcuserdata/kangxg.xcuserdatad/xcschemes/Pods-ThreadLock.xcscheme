@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6EF299D724D8382D2B13C419D3341030"
+               BlueprintIdentifier = "7E8B226EA3AEE37A76BBDF6AA4E2F89C"
                BuildableName = "Pods_ThreadLock.framework"
                BlueprintName = "Pods-ThreadLock"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6EF299D724D8382D2B13C419D3341030"
+            BlueprintIdentifier = "7E8B226EA3AEE37A76BBDF6AA4E2F89C"
             BuildableName = "Pods_ThreadLock.framework"
             BlueprintName = "Pods-ThreadLock"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -50,6 +50,7 @@
     }
     else if ([vc isKindOfClass:[UINavigationController class]])
         vc = [(id)vc viewControllers].firstObject;
+    
 
     if (!vc) {
         id userInfo = @{NSLocalizedDescriptionKey: @"nil or effective nil passed to promiseViewController"};
